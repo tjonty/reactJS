@@ -1,0 +1,46 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+body {
+  background-color: #9cc094;
+}
+
+#container {
+  width: 40%;
+  height: 100%;
+  background-color: #eae7c6;
+  border-radius: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin: 50px auto 0 auto;
+}
+
+.form {
+  margin: 0 0 0 0;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.input {
+  margin: 0 10px 0 0;
+}
+
+.add-btn {
+  background-color: #9d84b7;
+}
+
+.data {
+  background-color: #b2f9fc;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  align-content: center;
+}
+
+.clr-btn {
+  background-color: #c7bea2;
+  margin: 10px;
+}
