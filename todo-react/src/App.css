@@ -1,46 +1,93 @@
+body{
+  background-color:#F6D167;
+  color: white;
+  font-family: 'Noto Sans Mono', monospace;
+}
+
 .App {
-  font-family: sans-serif;
-  text-align: center;
-}
-
-body {
-  background-color: #9cc094;
-}
-
-#container {
-  width: 40%;
   height: 100%;
-  background-color: #eae7c6;
-  border-radius: 12px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: auto;
-  margin: 50px auto 0 auto;
+  width: 30%;
+  margin: auto;
 }
 
-.form {
-  margin: 0 0 0 0;
-  width: 50%;
-  margin: 0 auto;
+h1 {  
+  text-align: center;
+  font-weight: 600;
 }
 
-.input {
-  margin: 0 10px 0 0;
+.form-input{
+  height: 35px;
+  width: 78%;
 }
 
-.add-btn {
-  background-color: #9d84b7;
+.form-btn-submit {
+  height: 39px;
+  background-color: #D4ECDD;
+  border: 0px;
+  width: 20%;
 }
 
-.data {
-  background-color: #b2f9fc;
+.sidebar {
+  margin : 20px 0 10px 0;
+}
+
+.btn-sb{
+  background-color: transparent;
+  border: 1px solid black;
+  width: 28%;
+  height: 30px;
+  margin: auto 10px;
+  color: white;
+  padding: 5px;
+  font-size: 18px;
+}
+
+.sb-btn-click{
+  color: black;
+  background-color: white;
+}
+
+.todo-list-ul{ 
+  margin-top: 50px;
+  padding: 0px;
+  list-style-type: none;
+}
+
+.todo{
   display: flex;
-  align-items: center;
-  margin: 0 auto;
-  align-content: center;
+  align-content: space-around;
+  margin-top: 20px;
 }
 
-.clr-btn {
-  background-color: #c7bea2;
-  margin: 10px;
+.todo-name {
+  background-color: white;
+  color: black;
+  font-weight: bolder;
+  border: 0px;
+  height: 28px;
+  width: 60%;
+  margin: 0;
+  padding: 10px 0 0 10px ;
+  overflow: hidden;
+}
+
+.todo-btn-done, .todo-btn-del{
+  border: 1px solid grey;
+  height: 39px;
+  margin: 0;
+  width: 20%;
+  color: white;
+}
+
+.todo-btn-done{
+  background-color: #80ED99;
+}
+
+.todo-btn-del{
+  background-color: #FF2442;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.8;
 }
