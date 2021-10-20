@@ -17,26 +17,25 @@ export default function App() {
   }, []);
 
   useEffect(() => {
+    function filteredData() {
+      switch (status) {
+        case "Completed":
+          setFilteredTodo(todos.filter(todo => todo.completed === true))
+          break;
+        case "Incompleted":
+          setFilteredTodo(todos.filter(todo => todo.completed === false))
+          break;
+        default:
+          setFilteredTodo(todos)
+      }
+    }
+
+    function setLocalStorage() {
+      localStorage.setItem("todo", JSON.stringify(todos));
+    }
     filteredData();
     setLocalStorage();
   }, [todos, status]);
-
-  function filteredData() {
-    switch(status){
-      case "Completed":
-        setFilteredTodo(todos.filter(todo => todo.completed === true))
-        break;
-      case "Incompleted":
-        setFilteredTodo(todos.filter(todo => todo.completed === false))
-        break;
-      default:
-        setFilteredTodo(todos)
-    }
-  }
-
-  function setLocalStorage() {
-    localStorage.setItem("todo", JSON.stringify(todos));
-  }
 
   function getLocalStorage() {
     if(localStorage.getItem("todo") === null){
